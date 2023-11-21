@@ -2348,10 +2348,10 @@ enum {
   field_right = 29,
   field_size = 30,
   field_suerApp_declarator = 31,
-  field_superApp_condition = 32,
-  field_superApp_declarator = 33,
-  field_superApp_parameters = 34,
-  field_superApp_type = 35,
+  field_superAppCondition = 32,
+  field_superAppdeclarator = 33,
+  field_superAppparameters = 34,
+  field_superApptype = 35,
   field_symbol = 36,
   field_type = 37,
   field_underlying_type = 38,
@@ -2392,10 +2392,10 @@ static const char * const ts_field_names[] = {
   [field_right] = "right",
   [field_size] = "size",
   [field_suerApp_declarator] = "suerApp_declarator",
-  [field_superApp_condition] = "superApp_condition",
-  [field_superApp_declarator] = "superApp_declarator",
-  [field_superApp_parameters] = "superApp_parameters",
-  [field_superApp_type] = "superApp_type",
+  [field_superAppCondition] = "superAppCondition",
+  [field_superAppdeclarator] = "superAppdeclarator",
+  [field_superAppparameters] = "superAppparameters",
+  [field_superApptype] = "superApptype",
   [field_symbol] = "symbol",
   [field_type] = "type",
   [field_underlying_type] = "underlying_type",
@@ -2529,10 +2529,10 @@ static const TSFieldMapSlice ts_field_map_slices[PRODUCTION_ID_COUNT] = {
 static const TSFieldMapEntry ts_field_map_entries[] = {
   [0] =
     {field_body, 0, .inherited = true},
-    {field_superApp_declarator, 0, .inherited = true},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superAppdeclarator, 0, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [3] =
-    {field_superApp_type, 0},
+    {field_superApptype, 0},
   [4] =
     {field_directive, 0},
   [5] =
@@ -2549,7 +2549,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
   [11] =
     {field_value, 1},
   [12] =
-    {field_superApp_declarator, 0},
+    {field_superAppdeclarator, 0},
   [13] =
     {field_argument, 0},
     {field_operator, 1},
@@ -2557,7 +2557,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_arguments, 1},
     {field_function, 0},
   [17] =
-    {field_superApp_type, 1},
+    {field_superApptype, 1},
   [18] =
     {field_type, 1},
   [19] =
@@ -2566,7 +2566,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_argument, 1},
     {field_directive, 0},
   [22] =
-    {field_superApp_declarator, 1},
+    {field_superAppdeclarator, 1},
     {field_type, 0},
   [24] =
     {field_parameters, 0},
@@ -2582,10 +2582,10 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_body, 2},
   [31] =
     {field_consequence, 2},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [33] =
     {field_body, 2},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [35] =
     {field_label, 1},
   [36] =
@@ -2595,28 +2595,28 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
   [39] =
     {field_label, 0},
   [40] =
-    {field_superApp_declarator, 1},
+    {field_superAppdeclarator, 1},
   [41] =
-    {field_superApp_declarator, 1, .inherited = true},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superAppdeclarator, 1, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [43] =
     {field_suerApp_declarator, 0},
-    {field_superApp_parameters, 1},
+    {field_superAppparameters, 1},
   [45] =
     {field_parameters, 1},
-    {field_superApp_declarator, 0},
+    {field_superAppdeclarator, 0},
   [47] =
-    {field_superApp_declarator, 0},
-    {field_superApp_declarator, 1},
+    {field_superAppdeclarator, 0},
+    {field_superAppdeclarator, 1},
   [49] =
-    {field_superApp_declarator, 0},
-    {field_superApp_declarator, 1, .inherited = true},
+    {field_superAppdeclarator, 0},
+    {field_superAppdeclarator, 1, .inherited = true},
   [51] =
     {field_body, 2},
     {field_parameters, 1, .inherited = true},
-    {field_superApp_declarator, 1},
-    {field_superApp_declarator, 1, .inherited = true},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superAppdeclarator, 1},
+    {field_superAppdeclarator, 1, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [56] =
     {field_argument, 0},
     {field_field, 2},
@@ -2628,14 +2628,14 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_name, 1},
     {field_parameters, 2},
   [63] =
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [64] =
     {field_alternative, 2},
     {field_name, 1},
   [66] =
-    {field_superApp_type, 0, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [67] =
-    {field_superApp_declarator, 2},
+    {field_superAppdeclarator, 2},
     {field_type, 0},
   [69] =
     {field_left, 0},
@@ -2644,10 +2644,10 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_type, 1},
     {field_value, 3},
   [73] =
-    {field_superApp_declarator, 2},
+    {field_superAppdeclarator, 2},
     {field_type, 1},
   [75] =
-    {field_superApp_declarator, 2, .inherited = true},
+    {field_superAppdeclarator, 2, .inherited = true},
     {field_type, 1, .inherited = true},
   [77] =
     {field_name, 2},
@@ -2665,7 +2665,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
   [85] =
     {field_alternative, 3},
     {field_consequence, 2},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [88] =
     {field_initializer, 0},
   [89] =
@@ -2676,60 +2676,60 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_name, 0},
     {field_type, 2},
   [93] =
-    {field_superApp_declarator, 2},
+    {field_superAppdeclarator, 2},
   [94] =
-    {field_superApp_declarator, 0},
+    {field_superAppdeclarator, 0},
     {field_value, 2},
   [96] =
-    {field_superApp_declarator, 0},
-    {field_superApp_declarator, 1},
-    {field_superApp_declarator, 2, .inherited = true},
+    {field_superAppdeclarator, 0},
+    {field_superAppdeclarator, 1},
+    {field_superAppdeclarator, 2, .inherited = true},
   [99] =
-    {field_superApp_declarator, 0, .inherited = true},
-    {field_superApp_declarator, 1, .inherited = true},
+    {field_superAppdeclarator, 0, .inherited = true},
+    {field_superAppdeclarator, 1, .inherited = true},
   [101] =
     {field_body, 3},
     {field_parameters, 1, .inherited = true},
-    {field_superApp_declarator, 1},
-    {field_superApp_declarator, 1, .inherited = true},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superAppdeclarator, 1},
+    {field_superAppdeclarator, 1, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [106] =
     {field_body, 1},
     {field_name, 2},
     {field_paramters, 3},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superApptype, 0, .inherited = true},
   [110] =
     {field_body, 3},
     {field_parameters, 2, .inherited = true},
-    {field_superApp_declarator, 2},
-    {field_superApp_declarator, 2, .inherited = true},
-    {field_superApp_type, 1, .inherited = true},
+    {field_superAppdeclarator, 2},
+    {field_superAppdeclarator, 2, .inherited = true},
+    {field_superApptype, 1, .inherited = true},
   [115] =
     {field_argument, 0},
     {field_index, 2},
   [117] =
     {field_alternative, 3},
-    {field_superApp_condition, 0},
+    {field_superAppCondition, 0},
   [119] =
     {field_name, 1},
     {field_parameters, 2},
     {field_value, 3},
   [122] =
     {field_alternative, 3},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [124] =
     {field_alternative, 3},
     {field_name, 1},
   [126] =
-    {field_superApp_declarator, 1},
-    {field_superApp_type, 0, .inherited = true},
+    {field_superAppdeclarator, 1},
+    {field_superApptype, 0, .inherited = true},
   [128] =
     {field_size, 1},
   [129] =
-    {field_superApp_declarator, 3},
+    {field_superAppdeclarator, 3},
     {field_type, 1},
   [131] =
-    {field_superApp_declarator, 3, .inherited = true},
+    {field_superAppdeclarator, 3, .inherited = true},
     {field_type, 2, .inherited = true},
   [133] =
     {field_name, 0},
@@ -2739,14 +2739,14 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_name, 1},
     {field_underlying_type, 3},
   [138] =
-    {field_superApp_declarator, 0},
-    {field_superApp_parameters, 1},
+    {field_superAppdeclarator, 0},
+    {field_superAppparameters, 1},
   [140] =
     {field_body, 4},
     {field_name, 3},
   [142] =
     {field_body, 1},
-    {field_superApp_condition, 3},
+    {field_superAppCondition, 3},
   [144] =
     {field_update, 2},
   [145] =
@@ -2754,11 +2754,11 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_update, 2},
   [147] =
     {field_initializer, 0},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [149] =
     {field_body, 4},
     {field_initializer, 2, .inherited = true},
-    {field_superApp_condition, 2, .inherited = true},
+    {field_superAppCondition, 2, .inherited = true},
     {field_update, 2, .inherited = true},
   [153] =
     {field_operand, 1},
@@ -2768,49 +2768,49 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
   [156] =
     {field_assembly_code, 3},
   [157] =
-    {field_superApp_declarator, 3},
+    {field_superAppdeclarator, 3},
   [158] =
-    {field_superApp_declarator, 1},
-    {field_superApp_declarator, 2},
+    {field_superAppdeclarator, 1},
+    {field_superAppdeclarator, 2},
   [160] =
     {field_size, 2},
-    {field_superApp_declarator, 0},
+    {field_superAppdeclarator, 0},
   [162] =
     {field_body, 4},
     {field_parameters, 2, .inherited = true},
-    {field_superApp_declarator, 2},
-    {field_superApp_declarator, 2, .inherited = true},
-    {field_superApp_type, 1, .inherited = true},
+    {field_superAppdeclarator, 2},
+    {field_superAppdeclarator, 2, .inherited = true},
+    {field_superApptype, 1, .inherited = true},
   [167] =
     {field_body, 2},
     {field_name, 3},
     {field_paramters, 4},
-    {field_superApp_type, 1, .inherited = true},
+    {field_superApptype, 1, .inherited = true},
   [171] =
     {field_alternative, 4},
     {field_consequence, 2},
-    {field_superApp_condition, 0},
+    {field_superAppCondition, 0},
   [174] =
     {field_alternative, 4},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
   [176] =
     {field_size, 2},
   [177] =
-    {field_superApp_declarator, 0},
-    {field_superApp_declarator, 2, .inherited = true},
+    {field_superAppdeclarator, 0},
+    {field_superAppdeclarator, 2, .inherited = true},
   [179] =
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
     {field_update, 3},
   [181] =
     {field_initializer, 0},
-    {field_superApp_condition, 1},
+    {field_superAppCondition, 1},
     {field_update, 3},
   [184] =
     {field_initializer, 0},
     {field_update, 3},
   [186] =
     {field_initializer, 0},
-    {field_superApp_condition, 2},
+    {field_superAppCondition, 2},
   [188] =
     {field_member, 4},
     {field_type, 2},
@@ -2825,16 +2825,16 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_assembly_code, 3},
     {field_output_operands, 4},
   [197] =
-    {field_superApp_declarator, 4},
+    {field_superAppdeclarator, 4},
   [198] =
     {field_size, 3},
-    {field_superApp_declarator, 0},
+    {field_superAppdeclarator, 0},
   [200] =
     {field_designator, 0},
     {field_value, 2},
   [202] =
     {field_initializer, 0},
-    {field_superApp_condition, 2},
+    {field_superAppCondition, 2},
     {field_update, 4},
   [205] =
     {field_operand, 0, .inherited = true},

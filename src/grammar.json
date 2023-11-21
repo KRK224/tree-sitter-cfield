@@ -407,7 +407,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "_preproc_expression"
@@ -581,7 +581,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "_preproc_expression"
@@ -707,7 +707,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "_preproc_expression"
@@ -901,7 +901,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "_preproc_expression"
@@ -1948,7 +1948,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "ALIAS",
             "content": {
@@ -1998,7 +1998,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "CHOICE",
             "members": [
@@ -2041,7 +2041,7 @@
               },
               {
                 "type": "FIELD",
-                "name": "superApp_declarator",
+                "name": "superAppdeclarator",
                 "content": {
                   "type": "CHOICE",
                   "members": [
@@ -2150,7 +2150,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "SYMBOL",
             "name": "_type_declarator"
@@ -2167,7 +2167,7 @@
               },
               {
                 "type": "FIELD",
-                "name": "superApp_declarator",
+                "name": "superAppdeclarator",
                 "content": {
                   "type": "SYMBOL",
                   "name": "_type_declarator"
@@ -2218,7 +2218,7 @@
           },
           {
             "type": "FIELD",
-            "name": "superApp_type",
+            "name": "superApptype",
             "content": {
               "type": "SYMBOL",
               "name": "_type_specifier"
@@ -2883,7 +2883,7 @@
             },
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "SYMBOL",
                 "name": "_declarator"
@@ -2934,7 +2934,7 @@
             },
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "SYMBOL",
                 "name": "_field_declarator"
@@ -2985,7 +2985,7 @@
             },
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "SYMBOL",
                 "name": "_type_declarator"
@@ -3017,7 +3017,7 @@
             },
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "CHOICE",
                 "members": [
@@ -3051,7 +3051,7 @@
           },
           {
             "type": "FIELD",
-            "name": "superApp_parameters",
+            "name": "superAppparameters",
             "content": {
               "type": "SYMBOL",
               "name": "parameter_list"
@@ -3087,7 +3087,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "SYMBOL",
               "name": "_field_declarator"
@@ -3095,7 +3095,7 @@
           },
           {
             "type": "FIELD",
-            "name": "superApp_parameters",
+            "name": "superAppparameters",
             "content": {
               "type": "SYMBOL",
               "name": "parameter_list"
@@ -3112,7 +3112,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "SYMBOL",
               "name": "_type_declarator"
@@ -3137,7 +3137,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "CHOICE",
               "members": [
@@ -3167,7 +3167,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "SYMBOL",
             "name": "_declarator"
@@ -3196,7 +3196,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "SYMBOL",
               "name": "_declarator"
@@ -3253,7 +3253,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "SYMBOL",
               "name": "_field_declarator"
@@ -3310,7 +3310,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "SYMBOL",
               "name": "_type_declarator"
@@ -3367,7 +3367,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_declarator",
+            "name": "superAppdeclarator",
             "content": {
               "type": "CHOICE",
               "members": [
@@ -3429,7 +3429,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "SYMBOL",
             "name": "_declarator"
@@ -4187,7 +4187,7 @@
           "members": [
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "SYMBOL",
                 "name": "_field_declarator"
@@ -4221,7 +4221,7 @@
                 "members": [
                   {
                     "type": "FIELD",
-                    "name": "superApp_declarator",
+                    "name": "superAppdeclarator",
                     "content": {
                       "type": "SYMBOL",
                       "name": "_field_declarator"
@@ -4446,7 +4446,7 @@
           "members": [
             {
               "type": "FIELD",
-              "name": "superApp_declarator",
+              "name": "superAppdeclarator",
               "content": {
                 "type": "CHOICE",
                 "members": [
@@ -4696,7 +4696,7 @@
           },
           {
             "type": "FIELD",
-            "name": "superApp_condition",
+            "name": "superAppCondition",
             "content": {
               "type": "SYMBOL",
               "name": "parenthesized_expression"
@@ -4751,7 +4751,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "parenthesized_expression"
@@ -4835,7 +4835,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "parenthesized_expression"
@@ -4872,7 +4872,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "SYMBOL",
             "name": "parenthesized_expression"
@@ -4965,7 +4965,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_condition",
+          "name": "superAppCondition",
           "content": {
             "type": "CHOICE",
             "members": [
@@ -5256,7 +5256,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "superApp_condition",
+            "name": "superAppCondition",
             "content": {
               "type": "SYMBOL",
               "name": "_expression"
@@ -6208,7 +6208,7 @@
         },
         {
           "type": "FIELD",
-          "name": "superApp_declarator",
+          "name": "superAppdeclarator",
           "content": {
             "type": "CHOICE",
             "members": [

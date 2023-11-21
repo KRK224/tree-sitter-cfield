@@ -335,7 +335,7 @@
           }
         ]
       },
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -371,7 +371,7 @@
           }
         ]
       },
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -402,7 +402,7 @@
     "type": "abstract_pointer_declarator",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -481,7 +481,7 @@
           }
         ]
       },
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1162,7 +1162,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1183,7 +1183,7 @@
     "type": "declaration",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": true,
         "required": true,
         "types": [
@@ -1201,7 +1201,7 @@
           }
         ]
       },
-      "superApp_type": {
+      "superApptype": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1312,7 +1312,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1449,7 +1449,7 @@
     "type": "field_declaration",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": true,
         "required": false,
         "types": [
@@ -1459,7 +1459,7 @@
           }
         ]
       },
-      "superApp_type": {
+      "superApptype": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1623,7 +1623,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": false,
         "types": [
@@ -1677,7 +1677,7 @@
           }
         ]
       },
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -1695,7 +1695,7 @@
           }
         ]
       },
-      "superApp_parameters": {
+      "superAppparameters": {
         "multiple": false,
         "required": false,
         "types": [
@@ -1755,7 +1755,7 @@
           }
         ]
       },
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -1765,7 +1765,7 @@
           }
         ]
       },
-      "superApp_type": {
+      "superApptype": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2081,7 +2081,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2097,7 +2097,7 @@
     "type": "init_declarator",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2368,7 +2368,7 @@
     "type": "parameter_declaration",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -2382,7 +2382,7 @@
           }
         ]
       },
-      "superApp_type": {
+      "superApptype": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2493,7 +2493,7 @@
     "type": "pointer_declarator",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2646,7 +2646,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2945,7 +2945,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -3362,7 +3362,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -3489,7 +3489,7 @@
     "type": "type_definition",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": true,
         "required": true,
         "types": [
@@ -3529,7 +3529,7 @@
     "type": "type_descriptor",
     "named": true,
     "fields": {
-      "superApp_declarator": {
+      "superAppdeclarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -3697,7 +3697,7 @@
           }
         ]
       },
-      "superApp_condition": {
+      "superAppCondition": {
         "multiple": false,
         "required": true,
         "types": [

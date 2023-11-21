@@ -255,7 +255,7 @@ module.exports = grammar({
         optional($.ms_call_modifier),
         $._declaration_specifiers,
         field(
-          'superApp_declarator',
+          'superAppdeclarator',
           alias($._old_style_function_declarator, $.function_declarator)
         ),
         repeat($.declaration),
@@ -267,7 +267,7 @@ module.exports = grammar({
     _declaration_declarator: ($) =>
       commaSep1(
         field(
-          'superApp_declarator',
+          'superAppdeclarator',
           choice(
             seq($._declarator, optional($.gnu_asm_expression)),
             $.init_declarator
@@ -291,7 +291,7 @@ module.exports = grammar({
         repeat($.type_qualifier)
       ),
     _type_definition_declarators: ($) =>
-      commaSep1(field('superApp_declarator', $._type_declarator)),
+      commaSep1(field('superAppdeclarator', $._type_declarator)),
 
     _declaration_modifiers: ($) =>
       choice(
@@ -306,7 +306,7 @@ module.exports = grammar({
       prec.right(
         seq(
           repeat($._declaration_modifiers),
-          field('superApp_type', $._type_specifier),
+          field('superApptype', $._type_specifier),
           repeat($._declaration_modifiers)
         )
       ),
@@ -429,7 +429,7 @@ module.exports = grammar({
             '*',
             repeat($.ms_pointer_modifier),
             repeat($.type_qualifier),
-            field('superApp_declarator', $._declarator)
+            field('superAppdeclarator', $._declarator)
           )
         )
       ),
@@ -442,7 +442,7 @@ module.exports = grammar({
             '*',
             repeat($.ms_pointer_modifier),
             repeat($.type_qualifier),
-            field('superApp_declarator', $._field_declarator)
+            field('superAppdeclarator', $._field_declarator)
           )
         )
       ),
@@ -455,7 +455,7 @@ module.exports = grammar({
             '*',
             repeat($.ms_pointer_modifier),
             repeat($.type_qualifier),
-            field('superApp_declarator', $._type_declarator)
+            field('superAppdeclarator', $._type_declarator)
           )
         )
       ),
@@ -466,7 +466,7 @@ module.exports = grammar({
           seq(
             '*',
             repeat($.type_qualifier),
-            field('superApp_declarator', optional($._abstract_declarator))
+            field('superAppdeclarator', optional($._abstract_declarator))
           )
         )
       ),
@@ -476,7 +476,7 @@ module.exports = grammar({
         1,
         seq(
           field('suerApp_declarator', $._declarator),
-          field('superApp_parameters', $.parameter_list),
+          field('superAppparameters', $.parameter_list),
           optional($.gnu_asm_expression),
           repeat($.attribute_specifier)
         )
@@ -485,15 +485,15 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', $._field_declarator),
-          field('superApp_parameters', $.parameter_list)
+          field('superAppdeclarator', $._field_declarator),
+          field('superAppparameters', $.parameter_list)
         )
       ),
     function_type_declarator: ($) =>
       prec(
         1,
         seq(
-          field('superApp_declarator', $._type_declarator),
+          field('superAppdeclarator', $._type_declarator),
           field('parameters', $.parameter_list)
         )
       ),
@@ -501,14 +501,14 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', optional($._abstract_declarator)),
+          field('superAppdeclarator', optional($._abstract_declarator)),
           field('parameters', $.parameter_list)
         )
       ),
 
     _old_style_function_declarator: ($) =>
       seq(
-        field('superApp_declarator', $._declarator),
+        field('superAppdeclarator', $._declarator),
         field(
           'parameters',
           alias($._old_style_parameter_list, $.parameter_list)
@@ -519,7 +519,7 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', $._declarator),
+          field('superAppdeclarator', $._declarator),
           '[',
           repeat($.type_qualifier),
           field('size', optional(choice($._expression, '*'))),
@@ -530,7 +530,7 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', $._field_declarator),
+          field('superAppdeclarator', $._field_declarator),
           '[',
           repeat($.type_qualifier),
           field('size', optional(choice($._expression, '*'))),
@@ -541,7 +541,7 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', $._type_declarator),
+          field('superAppdeclarator', $._type_declarator),
           '[',
           repeat($.type_qualifier),
           field('size', optional(choice($._expression, '*'))),
@@ -552,7 +552,7 @@ module.exports = grammar({
       prec(
         1,
         seq(
-          field('superApp_declarator', optional($._abstract_declarator)),
+          field('superAppdeclarator', optional($._abstract_declarator)),
           '[',
           repeat($.type_qualifier),
           field('size', optional(choice($._expression, '*'))),
@@ -562,7 +562,7 @@ module.exports = grammar({
 
     init_declarator: ($) =>
       seq(
-        field('superApp_declarator', $._declarator),
+        field('superAppdeclarator', $._declarator),
         '=',
         field('value', choice($.initializer_list, $._expression))
       ),
@@ -714,7 +714,7 @@ module.exports = grammar({
     _field_declaration_declarator: ($) =>
       commaSep1(
         seq(
-          field('superApp_declarator', $._field_declarator),
+          field('superAppdeclarator', $._field_declarator),
           optional($.bitfield_clause)
         )
       ),
@@ -743,7 +743,7 @@ module.exports = grammar({
         $._declaration_specifiers,
         optional(
           field(
-            'superApp_declarator',
+            'superAppdeclarator',
             choice($._declarator, $._abstract_declarator)
           )
         )
@@ -804,7 +804,7 @@ module.exports = grammar({
       prec.right(
         seq(
           'if',
-          field('superApp_condition', $.parenthesized_expression),
+          field('superAppCondition', $.parenthesized_expression),
           field('consequence', $._statement),
           optional(field('alternative', $.else_clause))
         )
@@ -815,7 +815,7 @@ module.exports = grammar({
     switch_statement: ($) =>
       seq(
         'switch',
-        field('superApp_condition', $.parenthesized_expression),
+        field('superAppCondition', $.parenthesized_expression),
         field('body', $.compound_statement)
       ),
 
@@ -833,7 +833,7 @@ module.exports = grammar({
     while_statement: ($) =>
       seq(
         'while',
-        field('superApp_condition', $.parenthesized_expression),
+        field('superAppCondition', $.parenthesized_expression),
         field('body', $._statement)
       ),
 
@@ -842,7 +842,7 @@ module.exports = grammar({
         'do',
         field('body', $._statement),
         'while',
-        field('superApp_condition', $.parenthesized_expression),
+        field('superAppCondition', $.parenthesized_expression),
         ';'
       ),
 
@@ -861,7 +861,7 @@ module.exports = grammar({
           )
         ),
         field(
-          'superApp_condition',
+          'superAppCondition',
           optional(choice($._expression, $.comma_expression))
         ),
         ';',
@@ -921,7 +921,7 @@ module.exports = grammar({
       prec.right(
         PREC.CONDITIONAL,
         seq(
-          field('superApp_condition', $._expression),
+          field('superAppCondition', $._expression),
           '?',
           optional(field('consequence', $._expression)),
           ':',
@@ -1044,7 +1044,7 @@ module.exports = grammar({
         repeat($.type_qualifier),
         field('type', $._type_specifier),
         repeat($.type_qualifier),
-        field('superApp_declarator', optional($._abstract_declarator))
+        field('superAppdeclarator', optional($._abstract_declarator))
       ),
 
     sizeof_expression: ($) =>
@@ -1393,7 +1393,7 @@ function preprocIf(suffix, content) {
     ['preproc_if' + suffix]: ($) =>
       seq(
         preprocessor('if'),
-        field('superApp_condition', $._preproc_expression),
+        field('superAppCondition', $._preproc_expression),
         '\n',
         repeat(content($)),
         field('alternative', optional(elseBlock($))),
@@ -1415,7 +1415,7 @@ function preprocIf(suffix, content) {
     ['preproc_elif' + suffix]: ($) =>
       seq(
         preprocessor('elif'),
-        field('superApp_condition', $._preproc_expression),
+        field('superAppCondition', $._preproc_expression),
         '\n',
         repeat(content($)),
         field('alternative', optional(elseBlock($)))
