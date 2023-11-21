@@ -2,7 +2,7 @@
   "name": "tree-sitter-c-field",
   "version": "0.0.1",
   "description": "tree-sitter field test",
-  "main": "index.js",
+  "main": "bindings/node",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/KRK224/tree-sitter-c-field/issues"
   },
-  "homepage": "https://github.com/KRK224/tree-sitter-c-field#readme"
+  "homepage": "https://github.com/KRK224/tree-sitter-c-field#readme",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.8"
+  }
 }
