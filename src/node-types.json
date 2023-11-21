@@ -1201,7 +1201,7 @@
           }
         ]
       },
-      "type": {
+      "superApp_type": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1459,7 +1459,7 @@
           }
         ]
       },
-      "type": {
+      "superApp_type": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1745,7 +1745,7 @@
           }
         ]
       },
-      "type": {
+      "superApp_type": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2362,7 +2362,7 @@
           }
         ]
       },
-      "type": {
+      "superApp_type": {
         "multiple": false,
         "required": true,
         "types": [

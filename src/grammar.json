@@ -2218,7 +2218,7 @@
           },
           {
             "type": "FIELD",
-            "name": "type",
+            "name": "superApp_type",
             "content": {
               "type": "SYMBOL",
               "name": "_type_specifier"

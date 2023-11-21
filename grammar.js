@@ -306,7 +306,7 @@ module.exports = grammar({
       prec.right(
         seq(
           repeat($._declaration_modifiers),
-          field('type', $._type_specifier),
+          field('superApp_type', $._type_specifier),
           repeat($._declaration_modifiers)
         )
       ),
