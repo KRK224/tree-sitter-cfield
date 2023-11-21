@@ -1906,7 +1906,7 @@
           "name": "declarator",
           "content": {
             "type": "SYMBOL",
-            "name": "_declarator"
+            "name": "function_declarator"
           }
         },
         {
@@ -1931,14 +1931,6 @@
           "content": {
             "type": "SYMBOL",
             "name": "parameter_list"
-          }
-        },
-        {
-          "type": "FIELD",
-          "name": "return_type",
-          "content": {
-            "type": "SYMBOL",
-            "name": "_type_specifier"
           }
         }
       ]

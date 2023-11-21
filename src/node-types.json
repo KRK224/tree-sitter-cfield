@@ -1720,7 +1720,7 @@
         "required": true,
         "types": [
           {
-            "type": "_declarator",
+            "type": "function_declarator",
             "named": true
           }
         ]
@@ -1741,16 +1741,6 @@
         "types": [
           {
             "type": "parameter_list",
-            "named": true
-          }
-        ]
-      },
-      "return_type": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_type_specifier",
             "named": true
           }
         ]
