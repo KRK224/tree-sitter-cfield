@@ -1903,14 +1903,6 @@
         },
         {
           "type": "FIELD",
-          "name": "declarator",
-          "content": {
-            "type": "SYMBOL",
-            "name": "function_declarator"
-          }
-        },
-        {
-          "type": "FIELD",
           "name": "body",
           "content": {
             "type": "SYMBOL",
@@ -1980,14 +1972,6 @@
           "content": {
             "type": "SYMBOL",
             "name": "compound_statement"
-          }
-        },
-        {
-          "type": "FIELD",
-          "name": "name",
-          "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
           }
         }
       ]

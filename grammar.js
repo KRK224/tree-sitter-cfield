@@ -245,7 +245,6 @@ module.exports = grammar({
       seq(
         optional($.ms_call_modifier),
         $._declaration_specifiers,
-        field('declarator', $.function_declarator),
         field('body', $.compound_statement),
         field('name', $.identifier),
         field('paramters', $.parameter_list)
@@ -260,8 +259,7 @@ module.exports = grammar({
           alias($._old_style_function_declarator, $.function_declarator)
         ),
         repeat($.declaration),
-        field('body', $.compound_statement),
-        field('name', $.identifier)
+        field('body', $.compound_statement)
       ),
 
     declaration: ($) =>
