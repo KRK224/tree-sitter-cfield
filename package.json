@@ -1,0 +1,19 @@
+{
+  "name": "tree-sitter-c-field",
+  "version": "0.0.1",
+  "description": "tree-sitter field test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KRK224/tree-sitter-c-field.git"
+  },
+  "author": "kryun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KRK224/tree-sitter-c-field/issues"
+  },
+  "homepage": "https://github.com/KRK224/tree-sitter-c-field#readme"
+}
