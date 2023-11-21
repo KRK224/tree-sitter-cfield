@@ -321,16 +321,6 @@
     "type": "abstract_array_declarator",
     "named": true,
     "fields": {
-      "declarator": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_abstract_declarator",
-            "named": true
-          }
-        ]
-      },
       "size": {
         "multiple": false,
         "required": false,
@@ -341,6 +331,16 @@
           },
           {
             "type": "_expression",
+            "named": true
+          }
+        ]
+      },
+      "superApp_declarator": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_abstract_declarator",
             "named": true
           }
         ]
@@ -361,22 +361,22 @@
     "type": "abstract_function_declarator",
     "named": true,
     "fields": {
-      "declarator": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_abstract_declarator",
-            "named": true
-          }
-        ]
-      },
       "parameters": {
         "multiple": false,
         "required": true,
         "types": [
           {
             "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "superApp_declarator": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_abstract_declarator",
             "named": true
           }
         ]
@@ -402,7 +402,7 @@
     "type": "abstract_pointer_declarator",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -467,7 +467,21 @@
     "type": "array_declarator",
     "named": true,
     "fields": {
-      "declarator": {
+      "size": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "*",
+            "named": false
+          },
+          {
+            "type": "_expression",
+            "named": true
+          }
+        ]
+      },
+      "superApp_declarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -481,20 +495,6 @@
           },
           {
             "type": "_type_declarator",
-            "named": true
-          }
-        ]
-      },
-      "size": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "*",
-            "named": false
-          },
-          {
-            "type": "_expression",
             "named": true
           }
         ]
@@ -1152,9 +1152,9 @@
           }
         ]
       },
-      "condition": {
+      "consequence": {
         "multiple": false,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "_expression",
@@ -1162,9 +1162,9 @@
           }
         ]
       },
-      "consequence": {
+      "superApp_condition": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "_expression",
@@ -1183,7 +1183,7 @@
     "type": "declaration",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": true,
         "required": true,
         "types": [
@@ -1312,7 +1312,7 @@
           }
         ]
       },
-      "condition": {
+      "superApp_condition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1449,7 +1449,7 @@
     "type": "field_declaration",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": true,
         "required": false,
         "types": [
@@ -1605,20 +1605,6 @@
           }
         ]
       },
-      "condition": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_expression",
-            "named": true
-          },
-          {
-            "type": "comma_expression",
-            "named": true
-          }
-        ]
-      },
       "initializer": {
         "multiple": false,
         "required": false,
@@ -1633,6 +1619,20 @@
           },
           {
             "type": "declaration",
+            "named": true
+          }
+        ]
+      },
+      "superApp_condition": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_expression",
+            "named": true
+          },
+          {
+            "type": "comma_expression",
             "named": true
           }
         ]
@@ -1657,9 +1657,29 @@
     "type": "function_declarator",
     "named": true,
     "fields": {
-      "declarator": {
+      "parameters": {
         "multiple": false,
-        "required": true,
+        "required": false,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "suerApp_declarator": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_declarator",
+            "named": true
+          }
+        ]
+      },
+      "superApp_declarator": {
+        "multiple": false,
+        "required": false,
         "types": [
           {
             "type": "_declarator",
@@ -1675,9 +1695,9 @@
           }
         ]
       },
-      "parameters": {
+      "superApp_parameters": {
         "multiple": false,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "parameter_list",
@@ -1715,16 +1735,6 @@
           }
         ]
       },
-      "declarator": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "function_declarator",
-            "named": true
-          }
-        ]
-      },
       "name": {
         "multiple": false,
         "required": false,
@@ -1741,6 +1751,16 @@
         "types": [
           {
             "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "superApp_declarator": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "function_declarator",
             "named": true
           }
         ]
@@ -2051,22 +2071,22 @@
           }
         ]
       },
-      "condition": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          }
-        ]
-      },
       "consequence": {
         "multiple": false,
         "required": true,
         "types": [
           {
             "type": "_statement",
+            "named": true
+          }
+        ]
+      },
+      "superApp_condition": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "parenthesized_expression",
             "named": true
           }
         ]
@@ -2077,7 +2097,7 @@
     "type": "init_declarator",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2348,7 +2368,7 @@
     "type": "parameter_declaration",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -2473,7 +2493,7 @@
     "type": "pointer_declarator",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2626,7 +2646,7 @@
           }
         ]
       },
-      "condition": {
+      "superApp_condition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -2925,7 +2945,7 @@
           }
         ]
       },
-      "condition": {
+      "superApp_condition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -3342,7 +3362,7 @@
           }
         ]
       },
-      "condition": {
+      "superApp_condition": {
         "multiple": false,
         "required": true,
         "types": [
@@ -3469,7 +3489,7 @@
     "type": "type_definition",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": true,
         "required": true,
         "types": [
@@ -3509,7 +3529,7 @@
     "type": "type_descriptor",
     "named": true,
     "fields": {
-      "declarator": {
+      "superApp_declarator": {
         "multiple": false,
         "required": false,
         "types": [
@@ -3677,7 +3697,7 @@
           }
         ]
       },
-      "condition": {
+      "superApp_condition": {
         "multiple": false,
         "required": true,
         "types": [
