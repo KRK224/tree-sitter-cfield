@@ -35,7 +35,7 @@ const PREC = {
 };
 
 module.exports = grammar({
-  name: 'c',
+  name: 'cfield',
 
   extras: ($) => [/\s|\\\r?\n/, $.comment],
 

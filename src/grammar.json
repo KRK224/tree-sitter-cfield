@@ -1,5 +1,5 @@
 {
-  "name": "c",
+  "name": "cfield",
   "word": "identifier",
   "rules": {
     "translation_unit": {
