@@ -1109,7 +1109,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -1288,7 +1288,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -2734,7 +2734,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -2818,7 +2818,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -2881,7 +2881,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -3033,7 +3033,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -3125,7 +3125,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {
@@ -3136,7 +3136,7 @@
     }
   },
   {
-    "type": "preproc_include",
+    "type": "preproc_include_superapp",
     "named": true,
     "fields": {
       "path": {
@@ -3463,7 +3463,7 @@
           "named": true
         },
         {
-          "type": "preproc_include",
+          "type": "preproc_include_superapp",
           "named": true
         },
         {

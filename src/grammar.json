@@ -59,7 +59,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "preproc_include"
+          "name": "preproc_include_superapp"
         },
         {
           "type": "SYMBOL",
@@ -125,7 +125,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "preproc_include"
+          "name": "preproc_include_superapp"
         },
         {
           "type": "SYMBOL",
@@ -141,7 +141,7 @@
         }
       ]
     },
-    "preproc_include": {
+    "preproc_include_superapp": {
       "type": "SEQ",
       "members": [
         {

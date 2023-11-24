@@ -83,7 +83,7 @@ module.exports = grammar({
         $._empty_declaration,
         $.preproc_if,
         $.preproc_ifdef,
-        $.preproc_include,
+        $.preproc_include_superapp,
         $.preproc_def,
         $.preproc_function_def,
         $.preproc_call
@@ -101,7 +101,7 @@ module.exports = grammar({
         $._empty_declaration,
         $.preproc_if,
         $.preproc_ifdef,
-        $.preproc_include,
+        $.preproc_include_superapp,
         $.preproc_def,
         $.preproc_function_def,
         $.preproc_call
@@ -109,7 +109,7 @@ module.exports = grammar({
 
     // Preprocesser
 
-    preproc_include: ($) =>
+    preproc_include_superapp: ($) =>
       seq(
         preprocessor('include'),
         field(
